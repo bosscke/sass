@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Notes-Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+	<body>
+
+	<!------------------------>
+		<header><h1 id="H1"><span class="icon" id="home"><i class="fa fa-pencil-square-o"></i></span><span>Advanced CSS and SASS</span></h1></header>
+	<!------------------------>
+		<nav><a href="#">Home</a></nav>
+	<!----------MAIN---------->
+		<main>
+	<!------------------------>		
+		<div class="left-box">
+
+			<aside>
+				<h3></h3>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#start"></a></li>
+					<li><a href="#txt-formatting"></a></li>		
+					<li><a href="#fonts-styling"></a></li>
+					<li><a href="#links-states"></a></li>
+					<li><a href="#selectors"></a></li>
+					<li><a href="#lists"></a></li>
+					<li><a href="#tables"></a></li>
+					<li><a href="#display"></a></li>
+					<li><a href="#sizing-elements"></a></li>
+					<li><a href="#positions"></a></li>
+					<li><a href="#overflow"></a></li>
+					<li><a href="#float-and-clear"></a></li>
+					<li><a href="#"></a></li>
+				</ul>	
+			</aside>
+		</div>
+	<!------------------------>
+	<!------------------------>
+		<div class="right-box">
+		<!-------RIGHT-BOX---->
+		<!-------Section------>
+			<section>
+				<h1>Advanced CSS and SASS</h1>
+
+				<p>Three pillars to write good HTML and CSS.</p>
+				
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="start">Three Pillars</h2>
+
+						<ul>
+							<li>Responsive Design</li>
+							<li>Maintainable and Scalable Code</li>
+							<li>Web Performance</li>
+
+						</ul>
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="txt-formatting">Responsive Design</h2>
+
+						<ul>
+							<li>Fluid layouts</li>
+							<li>Media queries</li>
+							<li>Responsive images</li>
+							<li>Correct units</li>
+							<li>Desktop-first vs. mobile-first</li>
+						</ul>				
+			</section>			
+		<!-------Section------>
+			<section>
+				<h2 id="fonts-styling">Maintainable and Scalable Code</h2>
+
+						<ul>
+							<li>Clean</li>
+							<li>Easy-to-understand</li>
+							<li>Growth</li>
+							<li>Reusable</li>
+							<li>How to organize files</li>
+							<li>How to name classes</li>
+							<li>How to structure HTML</li>
+						</ul>
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="links-states">Web Performance</h2>
+
+						<ul>
+							<li>Less HTTP Requests</li>
+							<li>Less Code</li>
+							<li>Compress Code</li>
+							<li>Use a CSS Preprocessor</li>
+							<li>Less Images</li>
+							<li>Compress Images</li>
+						</ul>
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="selectors">How CSS Works</h2>
+
+						<ol>
+							<li>Load HTML File</li>
+							<li>Parse HTML</li>
+							<li>Load CSS</li>
+							<li>Document Object Model (DOM)</li>
+							<li>Load CSS</li>
+							<li>Parse CSS</li>
+							<li>Resolve conflicting CSS declarations (cascade)</li>
+							<li>Process final CSS values</li>
+							<li>CSS Object Model (CSSOM)</li>
+							<li>Render tree</li>
+							<li>Website rendering: the visual formatting model</li>
+							<li>Final rendered websire</li>
+						</ol>
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="lists">The Cascade and Specificity</h2>
+
+						<ul>
+							<li>Cascade</li>
+							<li>Process Final CSS</li>
+						</ul>
+
+					<h3>Cascade</h3>
+					
+					<p>Process of combining different stylesheets and resolving conflicts between different CSS rules and declarations, when more than one rule applies.</p>
+						<ul>
+							<li>Author - the coder</li>
+							<li>User</li>
+							<li>Default Browser declarations (user agent)</li>
+						</ul>
+
+					<p>IMPORTANCE &gt; SPECIFICITY &gt; SOURCE ORDER</p>
+
+					<h4>Importance</h4>
+
+					<ol>
+						<li>User !importance declarations</li>
+						<li>Author !importance declarations</li>
+						<li>Author declarations</li>
+						<li>User declarations</li>
+						<li>Default browser declarations</li>
+					</ol>
+
+					<h4>Specificity</h4>
+
+					<ol>
+						<li>Inline styles</li>
+						<li>IDs</li>
+						<li>Classes, pseudo-classes, attribute</li>
+						<li>Elements, pseudo-elements</li>
+					</ol>
+
+					<h4>Source Order</h4>
+
+					<p>The last declaration in the code will
+					override all other declaratoins and will be applied.</p>
+
+					<ul>
+						<li>CSS declarations marked with !important have the highest priority</li>
+						<li>Inline styles will always have prio over styles in external stylesheets</li>
+						<li>Selector with ID is more specific than class</li>
+						<li>Selector with class is more specific than element</li>
+						<li>The universal selector * has no specificity value</li>
+						<li>Rely more on specificity than on the order of selectors</li>
+						<li>Rely on order when using 3rd party stylesheets - always put your author stylesheet last</li>
+
+					</ul>
+						
+
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="tables">How CSS Values are processed</h2>
+
+				<table>
+					<tr>
+						<th></th>
+						<th>Example (x)</th>
+						<th>How to convert to pixels</th>
+						<th>Result in pixels</th>
+					</tr>
+					<tr>
+						<td>% (fonts)</td>
+						<td>150%</td>
+						<td>x% * parent's computed font-size</td>
+						<td>24px</td>
+					</tr>
+					<tr>
+						<td>% (lengths)</td>
+						<td>10%</td>
+						<td>x% * parent's computed width</td>
+						<td>100px</td>
+					</tr>
+					<tr>
+						<td>em (font)</td>
+						<td>3em</td>
+						<td>x * parent computed font-size</td>
+						<td>72px (3*24)</td>
+					</tr>
+					<tr>
+						<td>em (lengths)</td>
+						<td>2em</td>
+						<td>x * current element computed font-size</td>
+						<td>48px</td>
+					</tr>
+					<tr>
+						<td>rem</td>
+						<td>10rem</td>
+						<td>x * root computed font-size</td>
+						<td>160px</td>						
+					</tr>
+					<tr>
+						<td>vh</td>
+						<td>90vh</td>
+						<td>x * 1% of viewport height</td>
+						<td>90% of the current viewport height</td>						
+					</tr>
+					<tr>
+						<td>vw</td>
+						<td>80vw</td>
+						<td>x * 1% of viewport width</td>
+						<td>80% of the current viewport width</td>						
+					</tr>
+
+				</table>
+
+				<ul>
+						<li>Each property has an initial value, used if nothing is declared</li>
+						<li>Browsers specify a root font-size for each page(usually 16px)</li>	
+						<li>Percentages and relative values are always converted to pixels</li>
+						<li>Percentages are measured relative to their parent's font-size if used to specify font-size </li>
+						<li>Percentages are measured relative to their parent's width, if used to specify lenghts</li>
+						<li>em are measured relative to their parent font-size if used to specify font size</li>
+						<li>em are measured relative to the current font-size if used to specify font size</li>
+						<li>rem are always measured relative to the documents root font size</li>
+						<li>vh and vw are simply percentage measurements of viewport's height and width</li>
+								
+
+					</ul>
+						
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="display">Display</h2>
+
+						<ul>
+							<li>Display Block</li>
+							<li>Display Inline</li>
+							<li>Display Inline-Block</li>
+							<li>Display None</li>
+						</ul>
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="sizing-elements">Sizing Elements</h2>
+
+						<ul>
+							<li>Width</li>
+							<li>Height</li>						
+						</ul>
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="positions">Positions</h2>
+
+						<ul>
+							<li>Position Relative</li>
+							<li>Position Absolute</li>
+							<li>Position Fixed</li>
+							<li>Overlapping Elements with Z-Index</li>					
+						</ul>
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="overflow">Overflow</h2>
+
+						<ul>
+							<li>Overflow Scroll</li>
+							<li>Overflow Auto</li>
+							<li>Overflow Hidden</li>									
+						</ul>
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="float-and-clear">Float and Clear</h2>
+
+						<ul>
+							<li>Float Left & Right</li>
+							<li>Clear</li>
+							<li>Clearfix Hack</li>
+							<li>Opacity</li>											
+						</ul>
+			</section>
+		<!-------Section------>
+			<section>
+				<h2 id="advanced-selectors">Advanced Selectors</h2>
+
+						<ul>
+							<li>Attribute Selector</li>
+							<li>Exact Value Selector</li>
+							<li>Contains Value Selector</li>
+							<li>Start With Selector</li>
+							<li>Ends With Selector</li>									
+						</ul>
+			</section>
+		<!-------Section------>
+			<section>
+				
+			</section>
+		<!-------Section------>
+		<!----RIGHT-BOX-END--->
+		</div>
+	<!------------------------>
+		</main>
+	<!------------------------>	
+		<footer>
+		<!-------Footer1------>
+			<div class="footer1">
+				<div class="email">
+					<a href="mailto:example@what.com"><i class="fa fa-envelope"></i></a>
+				</div>
+		<!-------------------->
+				<div class="linkedin">
+					<a href="#"><i class="fa fa-linkedin"></i></a> 
+				</div>
+			</div>
+		<!-------Footer2------>
+			<div class="footer2">
+				<div class="copyright">
+					All rights reserved.
+				</div>
+		<!-------------------->
+			</div>
+		</footer>
+	</body>
+</html>
